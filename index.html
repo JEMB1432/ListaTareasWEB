@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Lista de tareas</h1>
+    </header>
+    <main>
+        <section class="task-section">
+            <h2 class="task-section-title">Tareas asignadas: </h2>
+            
+        </section>
+        <div class="add-section">
+            <div class="input-section">
+                <label for="task" class="label">Agregar tarea</label>
+                <input type="text" id="task" class="task-content" maxlength="600" placeholder="Ej. Realizar pendiente de ... (max 600 caracteres)">
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn-add-task"> Agregar Tarea </button>
+                <button type="button" class="btn-delete-task"> Eliminar Tarea </button>
+            </div>
+        </div>
+    </main>
+    <script src="JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
