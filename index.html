@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Lista de tareas</title>
 </head>
 <body>
@@ -13,16 +14,22 @@
     <main>
         <section class="task-section">
             <h2 class="task-section-title">Tareas asignadas: </h2>
+            <hr class="divider">
+
+            <div class="task-list" id="task-list">
+
+            </div>
             
         </section>
         <div class="add-section">
             <div class="input-section">
                 <label for="task" class="label">Agregar tarea</label>
                 <input type="text" id="task" class="task-content" maxlength="600" placeholder="Ej. Realizar pendiente de ... (max 600 caracteres)">
-            </div>
-            <div class="buttons">
-                <button type="button" class="btn-add-task"> Agregar Tarea </button>
-                <button type="button" class="btn-delete-task"> Eliminar Tarea </button>
+                <div class="buttons">
+                    <button type="button" class="btn-add-task">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
